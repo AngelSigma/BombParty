@@ -1,0 +1,1 @@
+javascript:channel.socket.on("endGame", function (e){channel.socket.emit("join");});
