@@ -11,9 +11,9 @@ Il vous suffit tout simplement d'exécuter [le code du fichier autojoin.js](auto
 * channel.socket.emit("join"); simule le clic du bouton « Rejoindre la partie ».
 
 ## AUTOKICK
-Le but est de kicker (et non bannir) automatiquement les personnes cliquant sur le bouton « Rejoindre la partie ».
+Il s'agit d'un snippet à base de whitelist (on interdit tout le monde par défaut, puis on autorise au cas par cas).
 
-Celles et ceux « hors-jeu » peuvent interagir normalement dans le chat et suivre la partie en tant que spectateurs.
+Le but est de kicker (et non bannir) automatiquement les personnes cliquant sur le bouton « Rejoindre la partie ». Les joueurs ne figurant pas dans la whitelist ne peuvent pas jouer, mais peuvent interagir dans le chat, et suivre la partie en tant que spectateurs.
 
 * Connectez-vous à BombParty avec le compte de votre choix.
 * Créez un salon, puis [ouvrez la console de développement](http://www.alsacreations.com/astuce/lire/1436-console-javascript.html) de votre navigateur.
@@ -32,6 +32,10 @@ Le [code du fichier autokick.js](autokick.js) est détaillé ci-dessous :
 
 Complétez le tableau whitelist avec vos authId préalablement obtenus, et collez le code dans la console.
 
+## AUTOMOD
+Le [code du fichier automod.js](automod.js) reprend le même principe que l'autokick, à base de whitelist...
+
+... à ceci près que les joueurs dans la « modlist » deviennent automatiquement modérateurs, lors de leur entrée sur le salon. 
 
 ## SYLLABES UNIQUES
 Le script Python [unique_script.py](unique_script.py) permet d'extraire les n-uplets / syllabes uniques à partir d'un texte ou d'un dictionnaire.
