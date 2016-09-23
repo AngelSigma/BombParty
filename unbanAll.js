@@ -1,0 +1,1 @@
+for(banni in channel.data.bannedUsersByAuthId) { channel.socket.emit("unbanUser", banni) }

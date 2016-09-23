@@ -1,0 +1,1 @@
+for(joueurBP = 1; joueurBP < channel.data.users.length; joueurBP++) { channel.socket.emit("unmodUser", channel.data.users[joueurBP].authId) }
