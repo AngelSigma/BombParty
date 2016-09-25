@@ -35,7 +35,13 @@ Complétez le tableau whitelist avec vos authId préalablement obtenus, et colle
 ## AUTOMOD
 Le [code du fichier automod.js](automod.js) reprend le même principe que l'autokick, à base de whitelist...
 
-... à ceci près que les joueurs dans la « modlist » deviennent automatiquement modérateurs, lors de leur entrée sur le salon. 
+... à ceci près que les joueurs dans la « modlist » deviennent automatiquement modérateurs, lors de leur entrée sur le salon.
+
+## AUTONEWWORDS
+
+Les deux snippets [INIT](autonewwords_init.js) et [CHECK](autonewwords_check.js) permettent de récupérer, au fil de l'eau, les mots entrés par les joueurs de BombParty, et ainsi de constituer un dictionnaire de mots valides. Un tri est effectué pour supprimer les doublons, les occurrences d'un même mot proposé plusieurs fois.
+
+INIT permet d'initialiser les variables (dictionnaires) et les fonctions (tri), et ne doit être exécuté qu'une seule fois, lors de l'entrée sur un salon par exemple. CHECK trie les mots entrés depuis la dernière utilisation d'INIT ou de CHECK, et permet de visualiser, dans la console du navigateur, la mise en place progressive du dictionnaire.
 
 ## SYLLABES UNIQUES
 Le script Python [unique_script.py](unique_script.py) permet d'extraire les n-uplets / syllabes uniques à partir d'un texte ou d'un dictionnaire.
