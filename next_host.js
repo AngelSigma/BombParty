@@ -1,0 +1,1 @@
+javascript:alert("Le prochain hôte sera : "+channel.data.users[1].displayName)+".")
