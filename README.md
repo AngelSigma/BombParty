@@ -43,9 +43,9 @@ Les deux snippets [INIT](autonewwords_init.js) et [CHECK](autonewwords_check.js)
 
 INIT permet d'initialiser les variables (dictionnaires) et les fonctions (tri), et ne doit être exécuté qu'une seule fois, lors de l'entrée sur un salon par exemple. CHECK trie les mots entrés depuis la dernière utilisation d'INIT ou de CHECK, et permet de visualiser, dans la console du navigateur, la mise en place progressive du dictionnaire.
 
-## LISTE DES JOUEURS
+## HÔTE ET JOUEURS
 
-À l'époque où [l'overlay](https://github.com/MrInanimated/bp-overlay) n'existait pas encore, un simple clic sur [ce bookmarklet](joueurs.js) permettait d'afficher la liste des joueurs.
+Old good times. À l'époque où [l'overlay](https://github.com/MrInanimated/bp-overlay) n'existait pas encore, et où il était convenu que l'hôte d'un salon était choisi aléatoirement par le serveur, un simple clic sur le bookmarklet [joueurs.js](joueurs.js) permettait d'afficher la liste des joueurs, tandis que [next_host.js](next_host.js) affichait le prochain hôte d'un salon.
 
 ## SYLLABES UNIQUES
 Le script Python [unique_script.py](unique_script.py) permet d'extraire les n-uplets / syllabes uniques à partir d'un texte ou d'un dictionnaire.
