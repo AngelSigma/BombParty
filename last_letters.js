@@ -1,4 +1,5 @@
-function isAlive(element) {
+function isAlive(element)
+{
   return element.state == "alive";
 }
 
