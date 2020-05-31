@@ -1,5 +1,7 @@
 # BombParty
-Some snippets I made since I play BombParty, the multiplayer word party game.
+Une nouvelle version de BombParty est arrivée sur la plate-forme [JKLM.FUN](https://jklm.fun/) !
+
+La v1 du jeu a été retirée le 31 mai 2020 à 23h59, ce dépôt Github est désormais archivé.
 
 ## AUTOJOIN
 Le but est de rejoindre automatiquement une nouvelle partie, une fois la précédente terminée.
